@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="./img/Logo.png" alt="Logo de Alura Latam"> 
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="caja_texto">
+                <textarea id="areaTexto" class="area_texto" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="zona_alerta">
+                    <img class="icono_alerta" src="./img/Group.png" alt="alerta">
+                    <span class="texto_alerta">Solo letras minúsculas y sin acentos</span>
+                        <div class="botones">
+                            <button id="botonEncriptar" class="bton_encriptar">Encriptar</button>
+                            <button id="botonDesencriptar" class="bton_desencriptar">Desencriptar</button>
+                        </div>
+                </div>
+            </div>
+                <div id="campoEncriptados" class="campo_encriptados ajustar">
+                    <img id="muneco" class="muneco" src="./img/Muñeco.png" alt="muñeco">
+                    <div class="zona_mensajes">
+                        <textarea id="mensajeFinal" class="mensaje_final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                        <p id="alertaMensajeFinal" class="alerta_mensaje_final">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <button id="botonCopiar" class="bton_copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="pie_de_pagina">
+        <p class="creador"> Create by Brayan Garcia</p>
+        <div>
+            <a href="https://github.com/BrayanG025">
+            <img class="links" src="./img/github.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/brayan-garcia-pdls/">
+            <img class="links" src="./img/linkedin.png">
+         </a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
